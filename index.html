@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pribadi - DerrXyzMods (Ultimate Cyber-Neon)</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="particles"></canvas>
+
+  <div class="container">
+
+    <header>
+      <button class="music-control" onclick="toggleMusic()">▶ Play</button>
+
+      <img src="https://img1.pixhost.to/images/8670/640112111_zion.jpg" alt="Foto Profil" class="profile-pic">
+
+      <h1>
+        <span id="profile-name" class="typewriter-text">DerrXyzMods</span>
+      </h1>
+
+      <p id="profile-status" class="status">
+        hello everyone, welcome to the derrxyzmods website.
+      </p>
+
+      <p id="profile-bio" class="bio"
+></p>I prefer clean and well-organized designs. For me, a layout that feels light, calm, and easy to understand is far more meaningful than something overly complicated.
+       
+
+      </p>
+
+      <nav>
+        <a href="index.html" class="menu-button active">My Profile</a>
+        <a href="#donation-section" class="menu-button" onclick="scrollToSection(event, 'donation-section')">Donasi (QRIS)</a>
+        <a href="download.html" class="menu-button">Menu Download</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2><i class="fas fa-user-astronaut"></i> Tentang Saya</h2>
+      <p id="about-text">
+        Hello, my name is Deri, I'm a student focused on programming and web development. 
+        I'm interested in creating fast, responsive, and user-friendly websites. 
+        I'm learning HTML, CSS, and JavaScript to create attractive and functional displays. 
+        My goal is to become a professional developer capable of creating digital solutions 
+        that benefit many people.
+      </p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-code-branch"></i> Proyek Terbaru</h2>
+
+      <div class="project-gallery">
+        <div class="slider" id="project-slider">
+
+          <div class="project-card">
+            <h3>Project 01: Profil Neon (This Site)</h3>
+            <p>
+              Contoh nyata dari desain bertema siber/neon yang Anda inginkan.
+              Dibangun dengan HTML, CSS, dan JavaScript murni untuk performa maksimal.
+            </p>
+            <div class="tags">
+              <span>#HTML</span><span>#CSS3</span><span>#JavaScript</span><span>#NeonDesign</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 02: Aplikasi Pelajar</h3>
+            <p>
+              Konsep awal aplikasi manajemen tugas sekolah berbasis web. 
+              Fitur termasuk daftar tugas, kalender, dan pengingat deadline.
+            </p>
+            <div class="tags">
+              <span>#DesignConcept</span><span>#UI/UX</span><span>#FuturePlan</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 03: Cyber Security Test</h3>
+            <p>
+              Latihan pribadi menguji kerentanan sistem sederhana menggunakan konsep dasar keamanan jaringan.
+              Fokus pada hardening.
+            </p>
+            <div class="tags">
+              <span>#Cybersecurity</span><span>#Networking</span><span>#PenTest</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slider-nav" id="slider-nav-dots"></div>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-brain"></i> Peta Keahlian (Skills Map)</h2>
+      <div class="skills-mapping">
+        <div class="skill-box"><i class="fab fa-html5"></i><p>HTML & CSS</p></div>
+        <div class="skill-box"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+        <div class="skill-box"><i class="fas fa-shield-alt"></i><p>Cyber Defense</p></div>
+        <div class="skill-box"><i class="fas fa-terminal"></i><p>Command Line</p></div>
+        <div class="skill-box"><i class="fas fa-bug"></i><p>Debugging</p></div>
+        <div class="skill-box"><i class="fas fa-laptop-code"></i><p>Responsive Design</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-rocket"></i> Impian Saya</h2>
+      <p id="dream-text">
+        My dream is to become a cybersecurity expert. 
+        I want to protect data, systems, and networks from digital threats. 
+        I am interested in learning how cyber attacks work and how to prevent them. 
+        With cybersecurity knowledge, I hope to contribute to keeping the digital world safe and trustworthy.
+      </p>
+    </section>
+
+    <section id="donation-section">
+      <h2><i class="fas fa-hand-holding-heart"></i> Dukung Proyek DerrXyzMods</h2>
+      <p>
+        Thank you for your support! Even the smallest contribution helps me continue improving my projects and growing my coding skills. You can donate through the QRIS below.
+
+      </p>
+
+      <div class="qris-container">
+        <img src="https://files.catbox.moe/omqyko.jpg" alt="QRIS Placeholder" class="qris-image">
+        <p class="qris-info">Scan QR di atas untuk berdonasi. (DerrXyzMods. Tourl QRIS)</p>
+
+        <div class="contact-button-trigger qris-contact-info" onclick="openContactModal('qris_info')">
+          <i class="fas fa-info-circle"></i>
+          <p>klik fitur ini jika qr tidak bisa</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai-chat-section">
+      <h2><i class="fas fa-robot"></i> Chat dengan DerrXyzMods-Neon AI</h2>
+
+      <div id="chatbot-container">
+        <div id="chat-messages">
+          <div class="message ai-message">
+            Halo! Saya adalah AI DerrXyzMods. AI ini masih tahap perkembangan, jadi ai belum jadi🙏.
+          </div>
+        </div>
+
+        <div class="input-area">
+          <input type="text" id="user-input" placeholder="Ketik pesan Anda..." onkeydown="handleKeyPress(event)">
+          <button id="send-button" onclick="sendMessage()">Kirim</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-handshake"></i> Hubungi Saya</h2>
+
+      <div class="contact-grid">
+        <div class="contact-button-trigger" onclick="openContactModal('email')">
+          <i class="fas fa-envelope"></i>
+          <p>Kirim Email</p>
+        </div>
+
+        <div class="contact-button-trigger" onclick="openContactModal('whatsapp')">
+          <i class="fab fa-whatsapp"></i>
+          <p>WhatsApp Chat</p>
+        </div>
+
+        <div class="contact-button-trigger" onclick="openContactModal('linkedin')">
+          <i class="fab fa-linkedin"></i>
+          <p>LinkedIn / Link</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeContactModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <div id="modal-content-details"></div>
+    </div>
+  </div>
+
+  <audio id="bg-music" autoplay loop muted>
+    <source src="https://files.catbox.moe/1mqzox.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JS FILE -->
+  <script src="script.js"></script>
+
+</body>
+  </html>
